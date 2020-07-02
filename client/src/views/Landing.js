@@ -3,7 +3,7 @@ import React from 'react';
 const Landing = () => {
   return (
     <div>
-      <a href="www.logger.phillipferreira.com"></a>View Logger
+      <a href="http://www.logger.phillipferreira.com">View Logger</a>
     </div>
   );
 };
