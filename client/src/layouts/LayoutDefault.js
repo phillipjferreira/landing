@@ -5,7 +5,7 @@ const LayoutDefault = ({ children }) => {
   return (
     <Fragment>
       <Navbar />
-      <main>{children}</main>
+      <main className="main">{children}</main>
     </Fragment>
   );
 };
