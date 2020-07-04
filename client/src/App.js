@@ -12,6 +12,7 @@ import LayoutDefault from './layouts/LayoutDefault';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'shards-ui/dist/css/shards.min.css';
+import 'react-slideshow-image/dist/styles.css';
 
 function App() {
   return (

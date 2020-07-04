@@ -84,3 +84,60 @@ html body {
     background-color: #eceded;
   }
 }
+
+.sub-title {
+  margin-top: 50px;
+  color: #6b6dff;
+  overflow-wrap: break-word;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.project-title {
+  color: #eceded;
+  overflow-wrap: break-word;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.project-description {
+  max-width: 600px;
+  line-height: 22px;
+  color: #9ca9b3;
+  overflow-wrap: break-word;
+  margin: 0 auto 16px auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.logger {
+  height: 100%;
+  display: block;
+  margin: 50px auto 16px auto;
+  width: 600px;
+  -webkit-box-shadow: 5px 5px 15px 5px #596166;
+  box-shadow: 5px 5px 15px 5px #596166;
+}
+
+.logger-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.each-slide,
+.slide {
+  width: 600px;
+  height: 400px;
+}
+
+.images-wrap {
+}
+
+/* #25282C */

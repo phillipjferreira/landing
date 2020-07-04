@@ -1,4 +1,5 @@
 import React from 'react';
+import LoggerCard from '../components/LoggerCard';
 
 const Landing = () => {
   return (
@@ -8,6 +9,7 @@ const Landing = () => {
         Phillip Ferreira <div className="line" /> Software
         <span className="title-span"> Engineer</span>
       </h1>
+      <LoggerCard />
     </div>
   );
 };

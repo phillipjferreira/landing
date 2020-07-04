@@ -15,10 +15,9 @@ const Navbar = () => {
             <div className="d-table m-auto">
               <img
                 id="main-logo"
-                className="d-inline-block align-top mr-1 ml-3"
+                className="d-inline-block align-top mr-1 ml-3 logo-primary"
                 style={{ maxWidth: '50px' }}
                 src={require('../images/PF-LOGO.svg')}
-                className="logo-primary"
                 alt="PF"
               />
               <span className="d-none d-md-inline ml-1 nav-brand">
