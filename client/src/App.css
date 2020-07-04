@@ -3,21 +3,91 @@ html body {
   font-family: 'Inter', sans-serif;
 }
 
-.title {
-  color: #eceded;
-  overflow-wrap: break-word;
-  margin-bottom: 16px;
-  text-align: center;
-  font-weight: 800;
-  font-size: 52px;
+.nav-height {
+  height: 57px;
+}
+
+/* XSmall Devices (up to 494px) */
+@media only screen and (max-width: 494px) {
+  .main {
+    padding: 15px 0px;
+  }
+  .title {
+    color: #eceded;
+    overflow-wrap: break-word;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .line {
+    display: flex;
+    margin: 9px auto 6px auto;
+    border-bottom-left-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    width: 100px;
+    height: 6px;
+    background-color: #eceded;
+  }
+}
+
+/* Small to Medium (495px to 991px) */
+@media only screen and (min-width: 495px) and (max-width: 991px) {
+  .main {
+    padding: 20px 0px;
+  }
+  .title {
+    color: #eceded;
+    overflow-wrap: break-word;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 52px;
+  }
+  .line {
+    display: flex;
+    margin: 12px auto 9px auto;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    width: 100px;
+    height: 8px;
+    background-color: #eceded;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .main {
+    padding: 20px 0px;
+  }
+  .title {
+    color: #eceded;
+    overflow-wrap: break-word;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 52px;
+    transform: translateY(-25px);
+  }
+  .line {
+    display: inline-block;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    width: 8px;
+    height: 100px;
+    transform: translateY(32px);
+    background-color: #eceded;
+  }
 }
 
 .title-span {
   color: #6b6dff;
-}
-
-.main {
-  padding: 40px 0px;
 }
 
 .logo-primary {
@@ -55,38 +125,8 @@ html body {
   font-weight: 600 !important;
 }
 
-/* Up to Medium (up to 991px) */
-@media only screen and (max-width: 991px) {
-  .line {
-    display: flex;
-    margin: 12px auto 9px auto;
-    border-bottom-left-radius: 4px !important;
-    border-bottom-right-radius: 4px !important;
-    border-top-left-radius: 4px !important;
-    border-top-right-radius: 4px !important;
-    width: 100px;
-    height: 8px;
-    background-color: #eceded;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .line {
-    display: inline-block;
-    border-bottom-left-radius: 4px !important;
-    border-bottom-right-radius: 4px !important;
-    border-top-left-radius: 4px !important;
-    border-top-right-radius: 4px !important;
-    width: 8px;
-    height: 100px;
-    transform: translateY(32px);
-    background-color: #eceded;
-  }
-}
-
 .sub-title {
-  margin-top: 50px;
+  margin-top: 30px;
   color: #6b6dff;
   overflow-wrap: break-word;
   margin-bottom: 8px;
@@ -99,7 +139,7 @@ html body {
 .project-title {
   color: #eceded;
   overflow-wrap: break-word;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
   font-size: 32px;
@@ -119,7 +159,7 @@ html body {
 .logger {
   height: 100%;
   display: block;
-  margin: 50px auto 16px auto;
+  margin: 30px auto;
   -webkit-box-shadow: 5px 5px 15px 5px #596166;
   box-shadow: 5px 5px 15px 5px #596166;
 }
@@ -128,6 +168,17 @@ html body {
   width: 100%;
   height: 100%;
   background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slide-caption {
+  color: #eceded;
+  transform: translateY(-30px);
+  margin-bottom: 0;
+  text-align: center;
+}
+.react-slideshow-container + div.indicators {
+  margin-top: 0px !important;
 }
 
 /* XSmall devices  (under 620px) */
@@ -135,7 +186,7 @@ html body {
   .each-slide,
   .slide {
     width: 90vw;
-    height: 60vw;
+    height: calc(60vw + 35px);
   }
   .logger {
     width: 90vw;
@@ -147,9 +198,27 @@ html body {
   .each-slide,
   .slide {
     width: 600px;
-    height: 400px;
+    height: 435px;
   }
   .logger {
     width: 600px;
   }
+}
+
+.slide-button {
+  display: flex;
+  justify-content: center;
+}
+
+.react-slideshow-container + div.indicators > .each-slideshow-indicator.active {
+  background: #6b6dff !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  margin: 0 10px;
 }

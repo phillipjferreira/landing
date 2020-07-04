@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'shards-react';
 import { Slide } from 'react-slideshow-image';
 import dashboard from '../images/dashboard.png';
 import ticketlog from '../images/ticketlog.png';
@@ -13,9 +14,6 @@ const LoggerCard = () => {
     indicators: true,
     arrows: true,
     pauseOnHover: true,
-    onChange: (oldIndex, newIndex) => {
-      console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-    },
   };
   return (
     <div>
@@ -28,31 +26,35 @@ const LoggerCard = () => {
                 backgroundImage: `url(${slideImages[0]})`,
               }}
             ></div>
+            <h5 className="slide-caption">Logger: Dashboard</h5>
           </div>
           <div className="each-slide">
             <div
               className="logger-image"
               style={{ backgroundImage: `url(${slideImages[1]})` }}
             ></div>
+            <h5 className="slide-caption">Logger: Ticket Log</h5>
           </div>
           <div className="each-slide">
             <div
               className="logger-image"
               style={{ backgroundImage: `url(${slideImages[2]})` }}
             ></div>
+            <h5 className="slide-caption">Logger: Sprint Board</h5>
           </div>
         </Slide>
+        <div className="slide-button">
+          <Button
+            href="http://www.logger.phillipferreira.com"
+            target="_blank"
+            className="nav-button mb-2"
+          >
+            View App
+          </Button>
+        </div>
       </div>
-      {/* <img
-        className="align-top logger"
-        style={{ maxWidth: '500px' }}
-        src={require('../images/dashboard.png')}
-        alt="Logger"
-      /> */}
       <div className="sub-title">Scrum Project Management</div>
-      <a href="http://www.logger.phillipferreira.com">
-        <h3 className="project-title">Logger</h3>
-      </a>
+      <h3 className="project-title">Logger</h3>
       <p className="project-description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua

@@ -1,5 +1,6 @@
 import React from 'react';
 import LoggerCard from '../components/LoggerCard';
+import Footer from '../components/Footer';
 
 const Landing = () => {
   return (
@@ -10,6 +11,7 @@ const Landing = () => {
         <span className="title-span"> Engineer</span>
       </h1>
       <LoggerCard />
+      <Footer />
     </div>
   );
 };
