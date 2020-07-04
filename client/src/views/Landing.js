@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <div>
       {/* <a href="http://www.logger.phillipferreira.com">View Logger</a> */}
-      <h1 className="title">
+      <h1 className="title px-3">
         Phillip Ferreira <div className="line" /> Software
         <span className="title-span"> Engineer</span>
       </h1>

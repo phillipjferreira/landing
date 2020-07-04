@@ -25,7 +25,7 @@ const Navbar = () => {
               </span>
             </div>
           </NavbarBrand>
-          <Button className="nav-button">Contact</Button>
+          <Button className="nav-button mr-3">Contact</Button>
         </Nav>
       </Container>
     </div>
