@@ -1,7 +1,11 @@
 const express = require('express');
+var sslRedirect = require('heroku-ssl-redirect');
 const path = require('path');
 
 const app = express();
+
+// Enable ssl redirect
+app.use(sslRedirect(['production'], 301));
 
 // Init Middleware
 app.use(express.json({ extended: false }));
