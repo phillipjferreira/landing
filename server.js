@@ -1,11 +1,21 @@
 const express = require('express');
-var sslRedirect = require('heroku-ssl-redirect');
+const sslRedirect = require('heroku-ssl-redirect');
+const hsts = require('hsts');
 const path = require('path');
 
 const app = express();
 
 // Enable ssl redirect
 app.use(sslRedirect(['production'], 301));
+
+// HSTS
+app.use(
+  hsts({
+    maxAge: 31536000, // Must be at least 1 year to be approved
+    includeSubDomains: true, // Must be enabled to be approved
+    preload: true,
+  })
+);
 
 // Init Middleware
 app.use(express.json({ extended: false }));
