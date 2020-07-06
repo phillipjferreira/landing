@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from 'shards-react';
 import { Slide } from 'react-slideshow-image';
-import dashboard from '../images/dashboard.png';
-import ticketlog from '../images/ticketlog.png';
-import board from '../images/board.png';
+import dashboard from '../images/dashboard_demo.png';
+import ticketlog from '../images/ticketlog_demo.png';
+import board from '../images/board_demo.png';
 
 const LoggerCard = () => {
   const slideImages = [dashboard, ticketlog, board];
@@ -56,8 +56,8 @@ const LoggerCard = () => {
       <div className="sub-title">Scrum Project Management</div>
       <h3 className="project-title">Logger</h3>
       <p className="project-description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua
+        A Ticketing System designed for Software development teams—organize a
+        product backlog, manage sprint cycles, and enhance teamwork.
       </p>
     </div>
   );
