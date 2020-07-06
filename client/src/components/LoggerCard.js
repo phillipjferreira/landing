@@ -51,6 +51,13 @@ const LoggerCard = () => {
           >
             View App
           </Button>
+          <Button
+            href="https://github.com/phillipjferreira/logger"
+            target="_blank"
+            className="nav-button light mb-2"
+          >
+            View Code
+          </Button>
         </div>
       </div>
       <div className="sub-title">Scrum Project Management</div>

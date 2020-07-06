@@ -112,6 +112,7 @@ html body {
 
 .nav-button {
   height: 40px;
+  margin: 0 5px 8px 5px !important;
   background-color: #6b6dff !important;
   border-bottom-color: #4f50c7 !important;
   border-top-color: #4f50c7 !important;
@@ -123,6 +124,15 @@ html body {
   border-top-right-radius: 3px !important;
   font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
+}
+
+.light {
+  color: #151719 !important;
+  background-color: #eceded !important;
+  border-bottom-color: #dadada !important;
+  border-top-color: #dadada !important;
+  border-right-color: #dadada !important;
+  border-left-color: #dadada !important;
 }
 
 .sub-title {
