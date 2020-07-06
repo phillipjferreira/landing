@@ -45,7 +45,7 @@ const LoggerCard = () => {
         </Slide>
         <div className="slide-button">
           <Button
-            href="http://www.logger.phillipferreira.com"
+            href="https://www.logger.phillipferreira.com"
             target="_blank"
             className="nav-button mb-2"
           >
