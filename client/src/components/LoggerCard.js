@@ -4,9 +4,10 @@ import { Slide } from 'react-slideshow-image';
 import dashboard from '../images/dashboard_demo.png';
 import ticketlog from '../images/ticketlog_demo.png';
 import board from '../images/board_demo.png';
+import charts from '../images/charts_demo.png';
 
 const LoggerCard = () => {
-  const slideImages = [dashboard, ticketlog, board];
+  const slideImages = [dashboard, ticketlog, board, charts];
   const properties = {
     duration: 5000,
     transitionDuration: 500,
@@ -41,6 +42,13 @@ const LoggerCard = () => {
               style={{ backgroundImage: `url(${slideImages[2]})` }}
             ></div>
             <h5 className="slide-caption">Logger: Sprint Board</h5>
+          </div>
+          <div className="each-slide">
+            <div
+              className="logger-image"
+              style={{ backgroundImage: `url(${slideImages[3]})` }}
+            ></div>
+            <h5 className="slide-caption">Logger: Charts &amp; Metrics</h5>
           </div>
         </Slide>
         <div className="slide-button">
