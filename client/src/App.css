@@ -201,6 +201,9 @@ html body {
   .logger {
     width: 90vw;
   }
+  .modal-content {
+    font-size: 14px;
+  }
 }
 
 /* Small devices and up (620px and up) */
@@ -212,6 +215,9 @@ html body {
   }
   .logger {
     width: 600px;
+  }
+  .modal-content {
+    font-size: 24px;
   }
 }
 
@@ -231,4 +237,14 @@ html body {
 
 .social-icons {
   margin: 0 10px;
+}
+
+.modal-content {
+  background-color: #151719 !important;
+  color: #eceded !important;
+}
+
+a.no-style:link,
+a.no-style:visited {
+  color: inherit;
 }

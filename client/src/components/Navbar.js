@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Button, Navbar as Nav, NavbarBrand } from 'shards-react';
 import { NavLink as RouteNavLink } from 'react-router-dom';
+import ContactModal from './ContactModal';
 
 const Navbar = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggle = () => {
+    setModalOpen(!modalOpen);
+  };
   return (
     <div className="nav-dark sticky-top nav-height">
+      <ContactModal toggle={toggle} open={modalOpen} />
       <Container className="p-0">
         <Nav type="dark" className="p-0 nav-layout">
           <NavbarBrand
@@ -25,7 +32,9 @@ const Navbar = () => {
               </span>
             </div>
           </NavbarBrand>
-          <Button className="nav-button mr-3">Contact</Button>
+          <Button onClick={toggle} className="nav-button mr-3">
+            Contact
+          </Button>
         </Nav>
       </Container>
     </div>
