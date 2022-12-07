@@ -14,7 +14,7 @@
   "author": "Phillip Ferreira",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "heroku-ssl-redirect": "0.0.4",
     "hsts": "^2.2.0"
   },
